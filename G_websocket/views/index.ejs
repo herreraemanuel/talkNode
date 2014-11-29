@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    The message
+    <input type="text" id="themessage">
+
+    <button id="thebutton">Send</button>
+
+    <br />
+    <br />
+    <br />
+    <h1>Repuesta</h1>
+    <div id="response">
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/jquery-2.1.1.min.js"></script>
+    <script src="/javascripts/g_websocket.js"></script>
+  </body>
+</html>
